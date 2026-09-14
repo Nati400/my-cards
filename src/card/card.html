@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="photo-frame">
+    <img
+      [src]="card.image"
+      [alt]="card.fullName"
+    >
+  </div>
+
+  <h1>{{ card.fullName }}</h1>
+
+  <div class="line"></div>
+
+  <div class="details">
+    <p>
+      <b>Born:</b>
+      <span>{{ card.birthDate }}</span>
+    </p>
+
+    <p>
+      <b>Died:</b>
+      <span>{{ card.deathDate }}</span>
+    </p>
+
+    <p>
+      <b>In Office:</b>
+      <span>{{ card.yearsInOffice }}</span>
+    </p>
+  </div>
+
+  <p class="fact">
+    {{ card.notableFact }}
+  </p>
+</div>
